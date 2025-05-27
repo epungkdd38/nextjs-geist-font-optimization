@@ -1,0 +1,70 @@
+/* Common utility classes */
+.text-center { text-align: center; }
+.mb-20 { margin-bottom: 20px; }
+.mt-20 { margin-top: 20px; }
+.p-20 { padding: 20px; }
+.rounded { border-radius: 8px; }
+.shadow { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+
+/* Theme colors */
+:root {
+    --primary-bg: #fff7cc;
+    --secondary-bg: #e6d4ff;
+    --accent-color: #ff9f7f;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Button hover effects */
+.btn-hover {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card styles */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+/* Status indicators */
+.status-success {
+    color: var(--success-color);
+}
+
+.status-error {
+    color: var(--error-color);
+}
